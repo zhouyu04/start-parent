@@ -5,6 +5,7 @@ import com.zzyy.start.entity.SysLog;
 import com.zzyy.start.mapper.AopLogMapper;
 import com.zzyy.start.utils.HttpContextUtils;
 import com.zzyy.start.utils.IPUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -20,6 +21,7 @@ import java.util.Date;
 
 @Aspect
 @Component
+@Slf4j
 public class AopLogAspect {
 
 
